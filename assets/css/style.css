@@ -262,6 +262,11 @@ input[type=submit] {
     /* margin: auto 0; */
   } 
 
+  /* Making the position of the header static (the default positioning) */
+  header {
+    position: static;
+  }
+
   #logo {
     width: 100%;
   }

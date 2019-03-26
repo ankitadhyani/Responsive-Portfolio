@@ -1,21 +1,14 @@
 # Responsive-Portfolio
 
-I have included Media Queries for 980px and 640px 
+##Media Queries:
 
-I. For 640px I have made the following changes under style.css:
-1.  Id = logo 
-    Changed width to 100% to fit to the screen
-  
+For a screen of 980px or less & for 640px or less I have included some changes in style.css file.
 
-  
-3. h1 tag
-   Changed margin-top property to slightly increase the height.
-  }
+We have used three @media screen tags, each with one of these max-widths: 980px, 768px and 640px.
 
- 4. Class "auth-image"
-    Turned off the float and changed width to 100%.
+We use 980px because we never want any of the content to be cut off. Since the desktop layout is about 960px wide, we want the media queries to kick in before the content gets cut off.
 
+768px is about the width of a tablet (which is the default page)
 
-II. For 980px following changes have been made under style.css:
-1. 
+640px is about the width of a phone in landscape.
 
