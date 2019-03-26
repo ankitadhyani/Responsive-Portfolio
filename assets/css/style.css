@@ -219,24 +219,18 @@ input[type=submit] {
 }
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES ------------------------------- */
 
 /* Large devices  */
 @media screen and (max-width: 980px) { 
-
-  /* Bug:: Initially only "Co" of "Contact" from Navbar should be visible 
-  to the user unless user scrolls right */
   
   .container {
     margin-top: 15px;
     margin-right: 100%;
+    /* overflow: auto; */
   }
-
-  nav {
-    margin-right: 5%;
-  }
-
-  #logo {
+  
+  #logo { 
     margin-left: 5%;
   }
 
@@ -244,31 +238,67 @@ input[type=submit] {
     margin-left: 5%;
     float: left;
     width: 70%;
+    margin-bottom: 40%; /*Leaves space above footer */
   }
 
   h1 {
     margin-top: 0px;
   }
 
+  footer {
+    margin-top: 10px;
+    height: 100px;
+    line-height: 1.5;
+  }
  }
+
+ /* Medium devices */
+ @media screen and (max-width: 768px) { 
+  
+  .container {
+    margin-top: 15px;
+    margin-right: 100%;
+  }
+
+  #main-container {
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 40%;
+  }
+
+  h1 {
+    margin-top: 0px;
+  }
+
+  footer {
+    margin-top: 10px;
+    height: 100px;
+    line-height: 1.5;
+  }
+
+ }
+
 
  /* Small devices */
 @media screen and (max-width: 640px) { 
   
   /* Modified properties for "index.html" */
 
-  /* Bug:: Navbar should be center alligned */
-   nav {
-    /* margin: auto 0; */
-  } 
-
   /* Making the position of the header static (the default positioning) */
   header {
     position: static;
   }
 
+  #masthead {
+    float: none;
+    text-align: center;
+  }
   #logo {
     width: 100%;
+  }
+  nav {
+    width: 100%;
+    padding-bottom: 5px;
   }
 
   #main-container {

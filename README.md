@@ -2,13 +2,10 @@
 
 ##Media Queries:
 
-For a screen of 980px or less & for 640px or less I have included some changes in style.css file.
+For screen:
+1. 980px or less (Large screens)
+2. 768px or less (Medium screens)
+3. 640px or less (Small screens)
 
-We have used three @media screen tags, each with one of these max-widths: 980px, 768px and 640px.
-
-We use 980px because we never want any of the content to be cut off. Since the desktop layout is about 960px wide, we want the media queries to kick in before the content gets cut off.
-
-768px is about the width of a tablet (which is the default page)
-
-640px is about the width of a phone in landscape.
+Media Quries have been added at the end of "style.css" file.
 
